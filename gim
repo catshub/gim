@@ -1,0 +1,12 @@
+#!/bin/bash
+# gim - .gitignore file manager
+# 生成 .gitignore 文件
+
+# export GIM_HOME=~/.gim
+
+
+# # 将命令注入PATH
+# PATH=$PATH:$GIM_HOME
+
+
+echo 1

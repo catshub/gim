@@ -1,0 +1,27 @@
+#!/bin/bash
+
+local _FILES_=($(ls submodules/gitignore | grep '.gitignore$' | tr A-Z a-z))
+local _FILES=${_FILES_[@]/.gitignore/}
+
+# .gitignore 文件列表
+__GIM_FILES(){
+  local filter="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=( $(compgen -W "$_FILES" -- ${filter}) )
+}
+
+# 返回 .gitignore 文件提示
+__GIM_FILES_TIP(){
+  local filter="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=( $(compgen -W "$_FILES" -- ${filter}) )
+}
+
+__GIM() {
+  case $COMP_CWORD in
+  0) #仍在完成根命令，这里不需要处理
+    ;;
+  1) #根命令已经完成，这里开始补充一级主命令
+    __GIM_FILES_TIP;;
+  esac
+}
+
+complete -F __GIM gim

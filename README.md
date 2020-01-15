@@ -1,0 +1,1 @@
+# `gim` - `.gitignore` file manager
