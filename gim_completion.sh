@@ -16,4 +16,4 @@ __GIM() {
   esac
 }
 
-complete -F __GIM gim
+complete -o dirnames -F __GIM gim
