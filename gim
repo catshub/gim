@@ -1,12 +1,17 @@
 #!/bin/bash
 # gim - .gitignore file manager
-# 生成 .gitignore 文件
 
-# export GIM_HOME=~/.gim
+# 文件名
+_FILE_NAME=$1
+# 目标文件夹
+_TARGET_DIR=${2:-.} # 默认取 .
 
+if [ ! -d $2 ]; then
+  echo "no such or not a directory: $2"
+  echo ""
+  echo "You should input a correct directory"
+  exit 1
+fi
 
-# # 将命令注入PATH
-# PATH=$PATH:$GIM_HOME
-
-
-echo 1
+# 复制文件到目标目录
+cp $GIM_HOME/submodules/gitignore/$_FILE_NAME.gitignore $_TARGET_DIR/.gitignore
