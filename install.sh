@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#
-bash get_dir.sh
+# 0. 初始化一个 $GIM_HOME 供使用
+bash root_dir.sh
 
-1. clone gitignore repo
+# 1. clone gitignore repo
 bash clone.sh
 
 # # 2. create indexes
