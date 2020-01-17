@@ -4,7 +4,7 @@
 bash root_dir.sh 1
 
 # 1. clone gitignore repo
-# bash clone.sh 1
+bash clone.sh 1
 
 # 2. create indexes
 bash create_indexes.sh
