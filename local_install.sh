@@ -19,7 +19,7 @@ tar -xf $GIM_HOME/$gitignore_zip -C $GIM_HOME/$tmp_dir
 [ ! -d $sub_dir ] && mkdir $sub_dir
 mv $tmp_dir/*/* $sub_dir
 ## clean
-rm $tmp_dir
+rm -rf $tmp_dir
 rm $gitignore_zip
 
 # 2. create indexes
