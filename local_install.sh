@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # 0. 创建根目录
-bash root_dir.sh
+export GIM_HOME=~/.gim
+if [ ! -d "$GIM_HOME" ]; then
+  mkdir $GIM_HOME
+fi
+echo "GIM_HOME: $GIM_HOME"
 
 # 1. clone gitignore repo
 bash clone.sh 1
