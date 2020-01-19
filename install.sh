@@ -17,7 +17,7 @@ tmp_dir=$(mktemp -d gim.XXXXXXXXXX)
 tmp_file=gim_$version.tar.gz
 curl -L -o $tmp_file $github_prefix
 tar -zxf $tmp_file -C $tmp_dir
-mv $tmp_dir/*/* .gim/
+mv $tmp_dir/*/* .
 
 # clean
 rm -rf $tmp_dir
