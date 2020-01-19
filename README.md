@@ -6,11 +6,10 @@ Use the `.gitignore` files from [github/gitignore](https://github.com/github/git
 
 ## Installation
 
-#### MacOS - Use `Homebrew`
+#### MacOS
 
 ```
-brew tap catshub/cats
-brew install gim
+curl -L -o- https://raw.githubusercontent.com/catshub/gim/master/install.sh | bash
 ```
 
 ## Usage
