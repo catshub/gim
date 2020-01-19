@@ -6,10 +6,12 @@ Use the `.gitignore` files from [github/gitignore](https://github.com/github/git
 
 ## Installation
 
-#### MacOS
+#### MacOS - zsh
 
-```
+```shell
 curl -L -o- https://raw.githubusercontent.com/catshub/gim/master/install.sh | bash
+# after installed
+source ~/.zshrc
 ```
 
 ## Usage

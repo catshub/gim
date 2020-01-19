@@ -42,3 +42,8 @@ fi
 
 # end
 cp $GIM_HOME/bin/gim /usr/local/bin/
+
+# ok
+echo ""
+echo "gim installed"
+echo ""
