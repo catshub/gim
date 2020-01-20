@@ -16,4 +16,16 @@ __GIM() {
   esac
 }
 
+# complete is a bash builtin, but recent versions of ZSH come with a function
+# called bashcompinit that will create a complete in ZSH. If the user is in
+# ZSH, load and run bashcompinit before calling the complete function.
+if [[ -n ${ZSH_VERSION-} ]]; then
+  autoload -U +X bashcompinit && bashcompinit
+  autoload -U +X compinit && if [[ ${ZSH_DISABLE_COMPFIX-} = true ]]; then
+    compinit -u
+  else
+    compinit
+  fi
+fi
+
 complete -o dirnames -F __GIM gim
