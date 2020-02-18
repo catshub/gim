@@ -14,6 +14,7 @@ gitignore_url="https://github.com/github/gitignore/archive/master.zip"
 gitignore_zip=gitignore.zip
 sub_dir=submodules/gitignore
 tmp_dir=$(mktemp -d submodules.XXXXXXXXXX)
+echo "fetch gitignore repo"
 curl -L -o $GIM_HOME/$gitignore_zip $gitignore_url
 tar -xf $GIM_HOME/$gitignore_zip -C $GIM_HOME/$tmp_dir
 [ ! -d $sub_dir ] && mkdir $sub_dir

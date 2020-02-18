@@ -9,6 +9,8 @@ github_prefix=https://github.com/catshub/gim/archive/v$version.tar.gz
 GIM_HOME=~/.gim
 if [ ! -d $GIM_HOME ]; then
   mkdir $GIM_HOME
+else
+  rm -rf $GIM_HOME/*
 fi
 cd $GIM_HOME
 
