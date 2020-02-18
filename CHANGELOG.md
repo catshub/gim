@@ -1,4 +1,10 @@
-# Changelog
+# ChangeLog
+
+## 1.2.0
+
+`2020-02-18`
+
+* feat: support to append content to the ignore file
 
 ## 1.1.0
 

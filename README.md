@@ -19,7 +19,7 @@ source ~/.zshrc
 `gim` will copy the `chosen .ignore file content` to init your `.gitignore` :
 
 ```
-gim [.ignore_file_type] [target_dir]
+gim <ignore_file_type> [target_dir] [-a]
 ```
 
 - use `Node.gitignore` file to init current repo (if the [target_dir] is current dir, you can omit this arg)
@@ -34,4 +34,14 @@ gim [.ignore_file_type] [target_dir]
 
   ```shell
   gim Ruby ~/user/test-repo
+  ```
+
+- if you already have a `.gitignore` file, you can use optional `-a` flag to append file content to your `.gitignore` file
+
+  ```shell
+  gim node -a
+  # or
+  gim node . -a
+  # or
+  gim Ruby ~/user/test-repo -a
   ```
