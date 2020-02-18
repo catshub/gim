@@ -2,7 +2,7 @@
 # web install script
 
 # temp variable
-version=1.1.0
+version=1.2.0
 github_prefix=https://github.com/catshub/gim/archive/v$version.tar.gz
 
 # root_dir
