@@ -16,7 +16,7 @@ source ~/.zshrc
 
 ## Usage
 
-`gim` will copy the `chosen .ignore file content` to init your `.gitignore` :
+`gim` will use the `chosen .ignore file content` to init your `.gitignore` :
 
 ```
 gim <ignore_file_type> [target_dir] [-a]
